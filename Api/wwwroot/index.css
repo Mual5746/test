@@ -1,0 +1,134 @@
+body {
+  position: relative;
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #0e0924;
+  color: rgb(16, 33, 56);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 10px;
+
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+  padding-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(142, 141, 208, 0.16);
+}
+
+ul {
+  list-style: none;
+  padding: 15px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+ul > li {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.6;
+  gap: 20px;
+}
+
+ul > li > header {
+  flex: 1;
+}
+
+ul > li > label > :first-child {
+  font-weight: 700;
+}
+
+ul > li > label {
+  border-radius: 8px;
+  padding: 30px;
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid transparent;
+  background-color: #fafafa;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+ul > li > input {
+  display: block;
+  padding: 30px;
+  position: absolute;
+  right: 30px;
+}
+
+ul > li > input:checked + label {
+  background-color: #5535e40c;
+  border-color: #5535e4;
+}
+
+form > button {
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #5535e4;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* stil för kortcontainer */
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px; 
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  padding: 16px;
+  text-align: center;
+  width: calc(33.333% - 20px); 
+  box-sizing: border-box;
+}
+
+
+.card img {
+  width: 70px; 
+  height: 70px; 
+  margin: 0 auto 16px auto; 
+  display: block;
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+
+.card p {
+  font-size: 0.9em;
+  color: #555;
+}

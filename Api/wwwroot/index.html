@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" />
+    <title>Softronic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <main>
+      <form id="itemForm" action="/items" onsubmit="handleSubmit(event)">
+        <h1>Select items</h1>
+        <p>Select the items you want then click "Submit" to proceed.</p>
+        <ul>
+          <li>
+            <label>Loading...</label>
+          </li>
+        </ul>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
